@@ -15,13 +15,12 @@ void get_URL( const string& host, const string& path )
   Address myAddress(host, path);
   mySocket.connect(myAddress);
 
-  string& myStr;
+  string myStr;
   // read until eof
   while (!mySocket.eof()) {
-    // reading data from socket
-    mySocket.read(myStr);
-  // print data
-    cout << myStr;
+    // reading data from socket and print data
+    mySocket.read(myStr&);
+    // mySocket.read(cout)
   }
   mySocket.close();
   cerr << "Warning: get_URL() has not been implemented yet.\n";
