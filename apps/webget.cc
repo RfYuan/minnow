@@ -23,7 +23,7 @@ void get_URL( const string& host, const string& path )
   // print data
     cout << myStr;
   }
-  mySocket.close()
+  mySocket.close();
   cerr << "Warning: get_URL() has not been implemented yet.\n";
 }
 
