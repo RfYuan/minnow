@@ -19,7 +19,7 @@ void get_URL( const string& host, const string& path )
   // read until eof
   while (!mySocket.eof()) {
     // reading data from socket and print data
-    mySocket.read(myStr&);
+    mySocket.read(&myStr);
     // mySocket.read(cout)
   }
   mySocket.close();
